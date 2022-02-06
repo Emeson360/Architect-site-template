@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+    background-color: white;
+}
+
+.navMenu {
+    list-style-type: none;
+    padding: 15px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.navMenu li {
+    display: inline-block;
+}
+
+.navMenu a {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
+    font-size: 20px;
+    
+}
+
+.navMenu a:hover {
+    background-color: #ccc;
+}
+
+.navMenu span {
+    font-weight: 700;
+}
+
+.fa-bars {
+    margin-left: 15px;
+    padding-right: 10px;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropContent {
+    position: absolute;
+    display: none;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.3);
+    padding: 10px;
+    background-color: white;
+    z-index: 1;
+}
+
+.dropDown:hover .dropContent {
+    display: block;
+}
+
+.mobileNav span {
+    font-weight: 700;
+}
+
+.dropDown li {
+    list-style-type: none;
+    padding: 2px 8px;
+}
+
+.dropDown a, .mobileNav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.dropDown a:hover {
+    background-color: #ccc;
+}
+
+.mobileNav {
+    display: none;
+}
+
+
+.skyview img {
+    width: 100%;
+}
+
+.skyviewTxt {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    color: white;
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+.skyviewTxt span {
+    background-color: rgba(15, 15, 15, 0.7);
+    padding: 15px;
+    margin-right: 5px;
+
+}
+
+.sectionWrapper {
+    width: 96%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.projects {
+    margin-top: 70px;
+}
+
+.projects h3 {
+    font-weight: 400;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.project1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.house {
+    width: 24%;
+    position: relative;
+}
+
+.house p {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+}
+
+.projects img {
+    width: 100%;
+}
+
+.project2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.aboutTxt {
+    margin-bottom: 50px;
+}
+
+.aboutTxt h3 {
+    font-weight: 400;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 20px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact1 {
+    width: 24%;
+    /* border: 1px solid red; */
+}
+
+.contact1 img {
+    width: 100%;
+}
+
+.contact1 h3 {
+    font-weight: 400;
+    padding-top: 12px;
+    margin-bottom: 18px;
+    color: rgb(37, 36, 36);
+    font-size: 27px;
+}
+
+p.grey {
+    color: grey;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+p.small {
+    font-size: 20px;
+}
+
+.link {
+    width: 100%;
+    background-color: #eee;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.contact1 a {
+    text-decoration: none;
+    color: black;
+    /* background-color: #ccc; */
+    /* padding: 5px 10px; */
+    
+    
+}
+
+.mail {
+    margin-top: 76px;
+}
+
+.mail h3 {
+    font-weight: 400;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 20px;
+}
+
+.mail p {
+    margin-bottom: 15px;
+}
+
+.mail input:not(.send) {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+}
+
+.send {
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.map img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+/* for mobile phones */ 
+@media screen and (max-width: 425px) {
+    .mobileNav {
+        display: block;
+        padding: 15px 10px;
+    }
+
+    .navBar {
+        display: none;
+    }
+
+    .skyviewTxt {
+        position: absolute;
+        top: 29%;
+        left: 28%;
+        font-size: 18px;
+    }
+
+    .skyviewTxt span {
+        padding: 10px;
+    }
+
+    .sectionWrapper {
+        width: 80%;
+    }
+
+    .project1 {
+        display: block;
+        flex-wrap: nowrap;
+    }
+
+    .project2 {
+        display: block;
+        flex-wrap: nowrap;
+    }
+
+    .house {
+        width: 100%;
+    }
+
+    .contacts {
+        display: block;
+    }
+
+    .contact1 {
+        width: 100%;
+    }
+    
+}
+
+/* for tablets */ 
+@media screen and (min-width: 426px) {
+    .mobileNav {
+        display: none;
+    }
+
+    .navBar {
+        display: block;
+    }
+
+    .skyviewTxt {
+        position: absolute;
+        top: 59%;
+        left: 35%;
+        font-size: 22px;
+    }
+
+    .sectionWrapper {
+        width: 90%;
+    }
+
+    .house {
+        width: 49%;
+    }
+
+    .contact1 {
+        width: 49%;
+    }
+}
+
+/* for laptops and desktops */ 
+@media screen and (min-width: 1024px) {
+    .skyviewTxt {
+        position: absolute;
+        top: 70%;
+        left: 35%;
+        font-size: 45px;
+    }
+
+    .sectionWrapper {
+        width: 94%;
+    }
+
+    .house {
+        width: 24%;
+    }
+
+    .contact1 {
+        width: 24%;
+    }
+}
