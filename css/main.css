@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 header {
     width: 100%;
 }
@@ -25,6 +26,8 @@ nav {
     position: sticky;
     top: 0;
 }
+
+
 
 .navMenu li {
     display: inline-block;
@@ -193,6 +196,7 @@ nav {
 
 .contact1 img {
     width: 100%;
+    filter: grayscale(75%);
 }
 
 .contact1 h3 {
@@ -377,3 +381,5 @@ p.small {
         width: 24%;
     }
 }
+
+
